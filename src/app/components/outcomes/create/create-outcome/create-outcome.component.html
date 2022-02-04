@@ -1,0 +1,22 @@
+<div class="container" style="margin-top: 250px;">
+<h1>Registrar un nuevo gasto</h1>
+<p>Desde aqui podra registrar un nuevo gasto</p>
+</div>
+<div class="container" style="margin-top: 50px;">
+<form class="example-form">
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Monto</mat-label>
+        <textarea matInput [(ngModel)]="model.amount"></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Detalle</mat-label>
+        <textarea matInput [(ngModel)]="model.detail"></textarea>
+      </mat-form-field>
+    </p>
+  </form>
+</div>
+<div class="container">
+    <button mat-raised-button color="primary" (click)="createOutcome" routerLink="/outcomes">Guardar</button>
+    <button mat-raised-button color="primary" style="margin-left: 5%;" routerLink="/outcomes">Volver</button>
+</div>
